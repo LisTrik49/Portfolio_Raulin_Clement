@@ -5,21 +5,14 @@
     line-height: 66px;
 }
 
-.m-left{
-    float : left;
+.m-center{
+    display : flex;
+    justify-content: center;
 }
 
-.logo{
-    margin: 0; padding: 0;
-    color: aqua;
-    text-transform: uppercase;
-    font-size: 35px;
-    letter-spacing: 1px;
-}
-
-
-.m-right{
-    float : right;
+.m-center a{
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .m-link{
@@ -27,4 +20,14 @@
     color: aqua;
     text-transform: uppercase;
     padding: 0;margin: 0 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.m-link:hover{
+    font-size: 120%;
+}
+
+.m-link i{
+    margin-right: 5px;
+    
 }
