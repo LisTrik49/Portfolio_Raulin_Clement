@@ -1,0 +1,17 @@
+.titre-logo{
+    color: aqua;
+    font-family: 'Nunito';
+    display: flex;
+    text-align: center;
+    font-size: 2.7vw;
+    position: absolute;
+    z-index:2;
+    margin-left: 33%;
+    margin-top: 55%;
+    
+}
+
+.logo{
+    position: absolute;
+    z-index:1;
+}
