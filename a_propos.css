@@ -1,4 +1,50 @@
+.photo{
+    width: 30vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: row;
+}
+
 .photo_id{
-    width: 100px;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titre1{
+    font-family: 'Solway';
+    font-size: 4vw;
+    color: #00bcbe;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
+    margin-left: 20vw;
+    margin-top: 3vw;
+    border: black 2px solid;
+    width: 50%;
+}
+
+.titre2{
+    font-family: 'Solway';
+    font-size: 4vw;
+    color: #00bcbe;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
+    margin-left: 26vw;
+    margin-top: 3vw;
+    border: black 2px solid;
+    width: 50%;
+}
+
+.contenu{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    border: black 2px;
 }

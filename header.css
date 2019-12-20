@@ -17,7 +17,7 @@
 
 .m-link{
     text-decoration: none;
-    color: aqua;
+    color: #00bcbe;
     text-transform: uppercase;
     margin: 0px 15px;
     transition : all 0.4s ease-in-out;
@@ -26,7 +26,7 @@
 
 .m-link:hover{
     font-size: 105%;
-    text-decoration: underline aqua;
+    text-decoration: underline #00bcbe;
 }
 
 
@@ -41,7 +41,7 @@
     align-items: center;
     float: right;
     cursor: pointer;
-    color: aqua;
+    color: #00bcbe;
     margin-right: 50px;
 }
 
@@ -50,7 +50,7 @@ span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
     display: block;
     width: 100%;
     height: 2px;
-    background: aqua;
+    background: #00bcbe;
     position: relative;
     transition: all 1s ease-in-out;
 }
