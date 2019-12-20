@@ -10,8 +10,9 @@
     margin-top: 10vw;
     margin-left: 7vw;
     border: black 2px solid;
-    width: 19vw;
+    width: 22vw;
     height: 5vw;
+    font-family: 'Solway';
 }
 
 .skills{
@@ -21,4 +22,5 @@
     display: flex;
     margin-top: 3vw;
     margin-left: 5vw;
+    font-family: 'Nunito' ;
 }
