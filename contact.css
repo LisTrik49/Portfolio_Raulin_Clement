@@ -1,0 +1,116 @@
+.contact{
+    margin-top: 4vw;
+    margin-left: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.tout_contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+}
+
+.logo1{
+    width: 4vw;
+    height: 3vw;
+    display: flex;
+}
+
+.texte1{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1.8vw;
+    margin-left: 1vw;
+}
+
+.texte{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1.8vw;
+    margin-left: 5vw;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    border: black 2px solid;
+    width: 50vw;
+    height: 35vw;
+    margin-top: 10vw;
+    position: absolute;
+    z-index:1;
+    margin-left: 40vw;
+    position: relative;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    border: black 2px solid;
+    width: 100%;
+    height: 6vw;
+}
+
+.nom{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    border: black 1px solid;
+    width: 7vw;
+    height: 3vw;
+}
+
+.mail{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    border: black 1px solid;
+    width: 7vw;
+    height: 3vw;
+}
+
+.mot{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    display: flex;
+    border: black 1px solid;
+    width: 13.5vw;
+    height: 3vw;
+}
+
+.envoyer{
+    font-family: 'Nunito';
+    font-size: 2vw;
+    color:#00bcbe;
+    text-align: center;
+    border: black 1px solid;
+    width: 9vw;
+    margin-left: 41vw;
+    margin-top: 32.2vw;
+    position: absolute;
+
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+}
