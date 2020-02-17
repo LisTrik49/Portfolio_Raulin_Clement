@@ -17,10 +17,10 @@
             <nav class="menu" role="navigation">
                 <div class="inner">
                     <div class="m-right">
-                        <a href="index.html" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a>
-                        <a href="a_propos.html" class="m-link"><i class="fa fa-user" aria-hidden="true"></i>A propos de moi</a>
-                        <a href="competences.html" class="m-link"><i class="fa fa-check" aria-hidden="true"></i>Competences</a>
-                        <a href="contact.html" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+                        <a href="index.php" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a>
+                        <a href="a_propos.php" class="m-link"><i class="fa fa-user" aria-hidden="true"></i>A propos de moi</a>
+                        <a href="competences.php" class="m-link"><i class="fa fa-check" aria-hidden="true"></i>Competences</a>
+                        <a href="contact.php" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
                     </div>
                     <div class="m-nav-toggle">
                         <span class="m-toggle-icon"></span>

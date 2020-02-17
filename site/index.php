@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <link rel="stylesheet" href="normalize.css">
@@ -17,10 +17,10 @@
             <nav class="menu" role="navigation">
                 <div class="inner">
                     <div class="m-right">
-                        <a href="index.html" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a>
-                        <a href="a_propos.html" class="m-link"><i class="fa fa-user" aria-hidden="true"></i>A propos de moi</a>
-                        <a href="competences.html" class="m-link"><i class="fa fa-check" aria-hidden="true"></i>Competences</a>
-                        <a href="contact.html" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+                        <a href="index.php" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a>
+                        <a href="a_propos.php" class="m-link"><i class="fa fa-user" aria-hidden="true"></i>A propos de moi</a>
+                        <a href="competences.php" class="m-link"><i class="fa fa-check" aria-hidden="true"></i>Competences</a>
+                        <a href="contact.php" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
                     </div>
                     <div class="m-nav-toggle">
                         <span class="m-toggle-icon"></span>
@@ -29,12 +29,8 @@
             </nav>
         </header>
         <div class = "logo">
-            <a href="logo.jpg"></a>
-            <img src="Images/logo.jpg" alt="logo site", width="100%">
-        </div>
-        <div class="titre-logo">
-           <b> CLEMENT RAULIN </br>
-            Développeur informatique </b>
+            <a href="logo.png"></a>
+            <img src="Images/logo.png" alt="logo site", width="120%">
         </div>
         <div>
             <marquee behavior="scroll" class="mentions" direction="up">
