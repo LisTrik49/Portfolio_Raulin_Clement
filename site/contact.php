@@ -1,3 +1,9 @@
+<?php 
+if(empty($_GET)){
+    header("Location: contact.php?page=recommandation");
+}
+include("functions.php");
+?>
 <html>
     <head>
         <link rel="stylesheet" href="contact.css">
@@ -63,15 +69,38 @@
                         Nantes, 44300
                     </div>
                 </div>
-                <div>
+            </div>
+            <div class='changement'>
                 <?php
-                //On inclue le formulaire
-                    include("formulaire.php")
+                if($_GET['page'] == 'message'){ ?>
+                    Vous voulez laisser une recommandation ?
+                    <a href='contact.php?page=recommandation'>Recommandation</a>
+                <?php }
+                
+                elseif($_GET['page'] == 'recommandation'){ ?>
+                    Vous voulez laisser un message ?
+                    <a href='contact.php?page=message'>Message</a>
+                <?php }
                 ?>
-                </div>
+            </div>
+            <div>
+            <?php
+            if($_GET['page'] == 'message'){
+            //On inclue le formulaire
+                include("message.php");
+            }
+            elseif($_GET['page'] == 'recommandation'){
+                include("recommandation.php");
+            }
+
+            $errors = formValidation($_GET['page']);
+            foreach($errors as $error){?>
+                    <div class=""><?=$error?></div>
+            <?php }?>
+                    </form>
+                </div>  
             </div>
         </div>
-
-    <script src="app.js"></script>
+        <script src="app.js"></script> 
     </body>
 </html>

@@ -1,0 +1,31 @@
+.formulaire{
+    font-family: 'Nunito';
+    font-size: 1.3vw;
+    text-align: center;
+    display: flex;
+    border: black 1px solid;
+    margin-left: 50%;
+    margin-top: 8%;
+    margin-right: 5%;
+    z-index: 1;
+    position: absolute;
+}
+
+.formulaire input{
+    width: 70%;
+    margin-top: 3%;
+}
+
+.formulaire textarea{
+    width: 90%;
+    align-content: center;
+}
+
+.formulaire button{
+    margin-top: 5%;
+}
+
+.form{
+    width: auto;
+    height: auto;
+}

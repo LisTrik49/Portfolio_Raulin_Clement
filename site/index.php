@@ -30,7 +30,7 @@
         </header>
         <div class = "logo">
             <a href="logo.png"></a>
-            <img src="Images/logo.png" alt="logo site", width="120%">
+            <img src="Images/logo.png" alt="logo site", width="100%", style="margin-left:6%">
         </div>
         <div>
             <marquee behavior="scroll" class="mentions" direction="up">
