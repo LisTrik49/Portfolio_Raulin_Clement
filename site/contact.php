@@ -8,12 +8,9 @@ include("functions.php");
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="contact.css">
-        <link rel="stylesheet" href="competences.css">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="Page_accueil.css">
-        <link rel="stylesheet" href="a_propos.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
@@ -54,7 +51,7 @@ include("functions.php");
                     <div>
                         <img src="Images/Gmail.png" class="logo1" alt="Gmail">
                     </div>
-                    <div class="texte1">
+                    <div class="texte">
                         clement.raulin@students.campus.academy
                     </div>
                 </div>
@@ -86,13 +83,11 @@ include("functions.php");
             <div class='changement'>
                 <?php
                 if($_GET['page'] == 'message'){ ?>
-                    Vous voulez laisser une recommandation ?
-                    <a href='contact.php?page=recommandation'>Recommandation</a>
+                    <a href='contact.php?page=recommandation' style="text-decoration: none; color: #00bcbe">Vous voulez laisser une recommandation sur le site ?</a>
                 <?php }
                 
                 elseif($_GET['page'] == 'recommandation'){ ?>
-                    Vous voulez laisser un message ?
-                    <a href='contact.php?page=message'>Message</a>
+                    <a href='contact.php?page=message' style="text-decoration: none; color: #00bcbe">Vous préférez me laisser un message personnel ?</a>
                 <?php }
                 ?>
             </div>
@@ -113,6 +108,43 @@ include("functions.php");
                     </form>
                 </div>  
             </div>
+        </div>
+        <div class="commentaires">
+            <div class="titre3">
+                RECOMMANDATIONS
+            </div>
+            <?php
+                $recommandations = findMessage();
+                if(!empty($recommandations)){
+                    foreach($recommandations as $recommandation){?>
+                        <div class = "recommandation">
+                            <div class="tete">
+                                <div class="name">
+                                    <?="<b>" . $recommandation['name'] . "</b>"?>
+                                </div>
+                                <div class="enterprise">
+                                    <?=", " . $recommandation['enterprise']?>
+                                </div>
+                                <div class="location">
+                                    <?=",<i> " . $recommandation['location'] . ".</i>"?>
+                                </div>
+                            </div>
+                                <div class="date_created">
+                                    <?="Posté le " . $recommandation['date_created']?>
+                                </div>
+                            <div class="content">
+                                <?="<br>\"" .$recommandation['content'] . "\""?>
+                            </div>
+                        </div>
+                    <?php }
+                }
+            ?>
+        </div>
+        <div class="CGU">
+            <a href="CGU.PHP">Cliquez ici pour lire les CGU</a>
+        </div>
+        <div class="footer">
+            <img src="Images/toplogo.png" alt="footer" style="width: 100%; margin-left: 8%;">
         </div>
         <script src="app.js"></script> 
     </body>

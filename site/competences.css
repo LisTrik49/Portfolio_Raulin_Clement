@@ -1,26 +1,346 @@
-.global{
-    display: flex;
+.carousel{
+    margin:auto;
     flex-direction: row;
+    height: 100%;
 }
 
-.titre{
-    font-size: 4vw;
-    color: #00bcbe;
-    text-align: center;
-    margin-top: 10vw;
-    margin-left: 7vw;
-    border: black 2px solid;
-    width: 22vw;
-    height: 5vw;
-    font-family: 'Solway';
+.carousel-indicators .active{
+    background-color: black;
 }
 
-.skills{
-    font-size: 2vw;
-    color: #00bcbe;
-    text-align: auto;
+.carousel-item-next, .carousel-item-prev{
     display: flex;
-    margin-top: 3vw;
-    margin-left: 5vw;
-    font-family: 'Nunito' ;
+    height: 100%;
+    margin: auto;
+    width: 70%;
+}
+
+@media screen and (min-device-width: 1000px){
+    .tout{
+        flex-direction: column;
+        display: flex;
+        margin-top: 0;
+    }
+
+    .haut{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        margin-top: 8vw;
+        height: 50vw;
+    }
+
+    .bas{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        height: 50vw;
+    }
+
+    .photo1{
+        width: 50%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo2{
+        width: 50%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo3{
+        width: 50%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo4{
+        width: 50%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+
+    .informatique, .juridique, .linguistique, .diplome{
+        width: 50%;
+    }
+
+    .titre{
+        position: relative;
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 2vw;
+        font-family: 'Nunito';
+        font-weight: bolder;
+    }
+
+    .contenu{
+        text-align: center;
+        height: 40vw;
+        flex-direction: row;
+    }
+
+    .carousel-item.active{
+        display: grid;
+        position: relative;
+        width: 70%;
+        height: 60%;
+        margin: 10vw auto 0;
+        text-align: center;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 0;
+    }
+
+    .carousel-inner{
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        color: black;
+        height: 100%;
+    }
+
+    .Compet{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px){
+    .tout{
+        flex-direction: column;
+        display: flex;
+        margin-top: 0;
+    }
+
+    .haut{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin-top: 18vw;
+        height: 70vw;
+    }
+
+    .bas{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        height: 70vw;
+    }
+
+    .photo1{
+        width: 100%;
+        height: 35vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo2{
+        width: 100%;
+        height: 35vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo3{
+        width: 100%;
+        height: 35vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo4{
+        width: 100%;
+        height: 35vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+
+    .informatique, .juridique, .linguistique, .diplome{
+        width: 100%;
+        height: 35vw;
+    }
+
+    .titre{
+        position: relative;
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 2vw;
+        font-family: 'Nunito';
+        font-weight: bolder;
+        height: 8%;
+    }
+
+    .contenu{
+        text-align: center;
+        height: 80%;
+        flex-direction: row;
+    }
+
+    .carousel-item.active{
+        display: grid;
+        position: relative;
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .carousel-inner{
+        margin-bottom: 0;
+        height: 50%;
+        margin-top: 5%;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 5%;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        color: black;
+        height: 100%;
+        margin-top: -5%;
+    }
+
+    .Compet{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen 
+and (max-device-width : 600px){
+    .tout{
+        flex-direction: column;
+        display: flex;
+        margin-top: 0;
+    }
+
+    .haut{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin-top: 15vw;
+        height: 100vw;
+    }
+
+    .bas{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        height: 100vw;
+    }
+
+    .photo1{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo2{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo3{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+    .photo4{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        opacity: 25%;
+        border: solid 2px;
+        position: absolute;
+    }
+
+    .informatique, .juridique, .linguistique, .diplome{
+        width: 100%;
+        height: 50vw;
+    }
+
+    .titre{
+        position: relative;
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 6vw;
+        font-family: 'Nunito';
+        font-weight: bolder;
+        height: 8%;
+    }
+
+    .contenu{
+        text-align: center;
+        height: 90%;
+        flex-direction: row;
+    }
+
+    .carousel-item.active{
+        display: grid;
+        position: relative;
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    .carousel-inner{
+        margin-bottom: 0;
+        height: 60%;
+        margin-top: 5vw;
+    }
+
+    .carousel-indicators li{
+        height: 3vw;
+        width: 3vw;
+        margin: 0 1vw 0;
+        background-color: grey;
+    } 
+
+    .carousel-indicators{
+        margin-bottom: 7vw;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        color: black;
+        height: 100%;
+        margin-top: -5%;
+    }
+
+    .Compet{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 4vw;
+    }
 }

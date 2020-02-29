@@ -1,5 +1,4 @@
 <div>
-    <marquee behavior="scroll" class="mentions" direction="up">
         <h2>Définitions</h2>
         <p><b>Client&nbsp;:</b>&nbsp;tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
         <b>Prestations et Services&nbsp;:</b> <a href="https://listrik49.github.io/Portfolio_Raulin_Clement/">https://listrik49.github.io/Portfolio_Raulin_Clement/</a> met à disposition des Clients&nbsp;:</p>
@@ -207,6 +206,7 @@
         </p><h2>10. Droit applicable et attribution de juridiction.</h2>  
          <p>
         Tout litige en relation avec l’utilisation du site&nbsp;<a href="https://listrik49.github.io/Portfolio_Raulin_Clement/">https://listrik49.github.io/Portfolio_Raulin_Clement/</a>&nbsp;est soumis au droit français. 
-        En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de ici</p>
-    </marquee>
+        En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de ici</p><br>
 </div>
+
+<a href="index.php">REVENIR SUR LE SITE</a>

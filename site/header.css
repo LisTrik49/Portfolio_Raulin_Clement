@@ -6,7 +6,7 @@
         height: 8vw;
         display: flex;
         flex-direction: row;
-        margin-bottom: 2vw;
+        margin-bottom: 0;
         position: fixed !important;
         z-index: 1;
     }
@@ -130,6 +130,7 @@
     .menu{
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
 }
 
@@ -150,7 +151,7 @@ and (max-device-width : 600px)
         flex-direction: row;
         position: fixed;
         margin-bottom: 2vw;
-
+        z-index: 20;
     }
 
     .m-nav-toggle{

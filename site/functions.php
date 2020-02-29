@@ -117,9 +117,9 @@ function formValidation($page)
             elseif($page == 'recommandation'){
             //La requête ajoute le nouveau message dans la base de données
             $sql = "INSERT INTO recommandations
-                    (name, email, enterprise, location, content)
+                    (name, email, enterprise, location, content, date_created)
                     VALUES
-                    (:name, :email, :enterprise, :location, :content)";
+                    (:name, :email, :enterprise, :location, :content, NOW())";
 
             $pdo = DBConnection::getPdo();
 
@@ -187,6 +187,31 @@ function saveNewContact($name, $email)
 
         $foundName = $stmt->fetch();
         return $foundName;
+    }
+
+    //récupère 5 messages pour la page contact
+    function findMessage()
+    {
+        //écrire ma requête SQL dans une variable 
+        $sql = "SELECT name, enterprise, location, content, date_created
+                FROM recommandations
+                ORDER BY date_created DESC 
+                LIMIT 5";
+
+        //récupérer pdo
+        $pdo = DbConnection::getPdo();
+
+        //préparer la requête (l'envoyer au serveur SQL)
+        $stmt = $pdo->prepare($sql);
+
+        //exécuter la requête, sans rien dans les ()
+        $stmt->execute();
+
+        //faire un fetchAll pour récupérer les résultats
+        $message = $stmt->fetchAll();
+
+        //return les résultats
+        return $message;
     }
 
 ?>

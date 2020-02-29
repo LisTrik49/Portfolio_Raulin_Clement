@@ -77,8 +77,7 @@
             </div>
         </div>
         <div class="footer">
-            <img src="Images/toplogo.png" alt="footer" style="width: 100%; margin-left: 8%;"
-">
+            <img src="Images/toplogo.png" alt="footer" style="width: 100%; margin-left: 8%;">
         </div>
     <script src="app.js"></script>
     </body>
