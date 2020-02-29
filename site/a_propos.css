@@ -1,50 +1,275 @@
-.photo{
-    width: 30vw;
-    height: 35vw;
-    display: flex;
-    flex-direction: row;
+@media screen and (min-device-width: 1000px){
+    .haut{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10vw;
+    }
+
+    .photo{
+        height: 15vw;
+        margin-right: 4vw;
+        transform: rotate(-10deg);
+        z-index: 2;
+    }
+
+    .bordure{
+        border: dashed black 3px;
+        height: 15vw;
+        width: 12vw;
+        margin-left: 4vw;
+        margin-top: 2vw;
+    }
+
+
+    .qui{
+        font-family: 'Nunito';
+        font-size: 1.4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 5%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .immersion{
+        color: #00787a;
+    }
+
+    .alert-primary{
+        text-align: center;
+        width: 40%;
+        margin: 3vw auto;
+        font-size: 1.5vw;
+        padding: 1vw 0;
+        position: inherit;
+    }
+
+    .contenu{
+        font-family: 'Nunito';
+        font-size: 1.4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 5%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .titre{
+        font-family: 'Nunito';
+        font-size: 1.6vw;
+        color:#00bcbe;
+        margin: 2%;
+    }
+
+    .titre2{
+        font-family: 'Nunito';
+        font-size: 1.6vw;
+        color:#00bcbe;
+        margin: 4vw 2% 2vw;
+        text-align: right;
+    }
+
+    .contenu2{
+        font-family: 'Nunito';
+        font-size: 1.4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 25%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+    .qui2, .contenu-bis, .contenu2-bis{
+        display: none;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px){
+    .haut{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20vw;
+    }
+
+    .photo{
+        height: 20vw;
+        margin: 3vw 4vw;
+    }
+
+
+    .qui{
+        font-family: 'Nunito';
+        font-size: 1.8vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 5%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .immersion{
+        color: #00787a;
+    }
+
+    .alert-primary{
+        text-align: center;
+        width: 40%;
+        margin: 3vw auto;
+        font-size: 1.8vw;
+        padding: 1vw 0;
+        position: inherit;
+    }
+
+    .contenu{
+        font-family: 'Nunito';
+        font-size: 1.8vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 5%;
+        width: 71%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .titre{
+        font-family: 'Nunito';
+        font-size: 2vw;
+        color:#00bcbe;
+        margin: 10vw 2% 2vw;
+    }
+
+    .titre2{
+        font-family: 'Nunito';
+        font-size: 2vw;
+        color:#00bcbe;
+        margin: 10vw 2% 2vw;
+        text-align: right;
+    }
+
+    .contenu2{
+        font-family: 'Nunito';
+        font-size: 1.8vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: center;
+        margin: 3% 25%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .qui2, .contenu-bis, .contenu2-bis{
+        display: none;
+    }
 }
 
-.photo_id{
-    display: flex;
-    flex-direction: row;
-}
+@media only screen 
+and (max-device-width : 600px){
+    .haut{
+        display: flex;
+        flex-direction: column;
+    }
 
-.titre1{
-    font-family: 'Solway';
-    font-size: 4vw;
-    color: #00bcbe;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vw;
-    margin-left: 20vw;
-    margin-top: 3vw;
-    border: black 2px solid;
-    width: 50%;
-}
+    .photo{
+        height: 50vw;
+        margin: 20vw 30% 10vw;
+    }
 
-.titre2{
-    font-family: 'Solway';
-    font-size: 4vw;
-    color: #00bcbe;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vw;
-    margin-left: 26vw;
-    margin-top: 3vw;
-    border: black 2px solid;
-    width: 50%;
-}
+    .qui, .contenu, .contenu2{
+        display: none;
+    }
 
-.contenu{
-    font-family: 'Nunito';
-    font-size: 2vw;
-    color:#00bcbe;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 4vw;
-    border: black 2px;
+    .qui2{
+        font-family: 'Nunito';
+        font-size: 4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: left;
+        margin: 0 15%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .immersion{
+        color: #00787a;
+    }
+
+    .alert-primary{
+        text-align: center;
+        width: 60%;
+        margin: 6vw auto;
+        font-size: 3vw;
+        padding: 1vw 0;
+        position: inherit;
+        
+    }
+
+    .contenu-bis{
+        font-family: 'Nunito';
+        font-size: 4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: left;
+        margin: 3% 5%;
+        width: 71%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
+
+    .titre{
+        font-family: 'Nunito';
+        font-size: 5vw;
+        color:#00bcbe;
+        margin: 10vw 2% 2vw;
+    }
+
+    .titre2{
+        font-family: 'Nunito';
+        font-size: 5vw;
+        color:#00bcbe;
+        margin: 10vw 2% 2vw;
+        text-align: right;
+    }
+
+    .contenu2-bis{
+        font-family: 'Nunito';
+        font-size: 4vw;
+        color:#00bcbe;
+        flex-direction: initial;
+        text-align: left;
+        margin: 3% 25%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+        text-decoration: none;
+    }
 }

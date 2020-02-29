@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="competences.css">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="header.css">
@@ -17,10 +18,22 @@
             <nav class="menu" role="navigation">
                 <div class="inner">
                     <div class="m-right">
-                        <a href="index.php" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a>
-                        <a href="a_propos.php" class="m-link"><i class="fa fa-user" aria-hidden="true"></i>A propos de moi</a>
-                        <a href="competences.php" class="m-link"><i class="fa fa-check" aria-hidden="true"></i>Competences</a>
-                        <a href="contact.php" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+                        <div class="first">
+                            <div class="accueil">
+                                <a href="index.php" class="m-link"><i class="fa fa-home" aria-hidden="true"></i> ACCUEIL</a>
+                            </div>
+                            <div class="a_propos">
+                                <a href="a_propos.php" class="m-link"><i class="fa fa-user" aria-hidden="true"></i> A PROPOS DE MOI</a>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="competences">
+                                <a href="competences.php" class="m-link"><i class="fa fa-check" aria-hidden="true"></i> COMPETENCES</a>
+                            </div>
+                            <div class="contact">
+                                <a href="contact.php" class="m-link"><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="m-nav-toggle">
                         <span class="m-toggle-icon"></span>

@@ -1,92 +1,277 @@
-.menu{
-    background-color: #000000;
-    width: 100%;
-    height: 66px;
-    line-height: 66px;
-}
+@media screen and (min-device-width: 1000px){
 
-.m-right{
-    display : flex;
-    justify-content: center;
-}
+    .menu{
+        background-color: #000000;
+        width: 100%;
+        height: 8vw;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vw;
+        position: fixed !important;
+        z-index: 1;
+    }
 
-.m-right a{
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-.m-link{
-    text-decoration: none;
-    color: #00bcbe;
-    text-transform: uppercase;
-    margin: 0px 15px;
-    transition : all 0.4s ease-in-out;
-    padding-bottom: 3px;
-}
-
-.m-link:hover{
-    font-size: 105%;
-    text-decoration: underline #00bcbe;
-}
-
-
-.m-link i{
-    margin-right: 7px;
-}
-
-.m-nav-toggle{
-    width: 40px;
-    height: 66px;
-    display: none;
-    align-items: center;
-    float: right;
-    cursor: pointer;
-    color: #00bcbe;
-    margin-right: 50px;
-}
-
-span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #00bcbe;
-    position: relative;
-    transition: all 1s ease-in-out;
-}
-
-.m-right.is-open{
-    transform: translateX(0);
-}
-
-.m-nav-toggle.is-open span.m-toggle-icon{
-    background: transparent;
-}
-
-@media (max-width: 820px){
     .m-right{
-        position: absolute;
-        top: 66px; right:0px;
-        width:200px;
-        height:100%;
-        background-color: black;
-        display: block;
-        transform: translateX(100%);
-        transition: all 0.3s ease-in-out;
-        z-index:3;
+        display : flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .first{
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        align-content: center;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        align-content: center;
     }
 
     .m-link{
-        display: block;
-        text-align: center;
-        height: 90px;
-        padding: 0;margin: 0;
+        text-decoration: none;
+        color: #00bcbe;
+        transition : all 0.4s ease-in-out;
+        align-content: center;
     }
 
-    .m-nav-toggle{
-        display: flex;
+    .accueil{
+        text-align: center;
+        width: 50%;
+        font-size: 1.6vw;
+        font-family: 'Nunito';
+    }
+    
+    .a_propos{
+        text-align: center;
+        width: 50%;
+        font-size: 1.6vw;
+        font-family: 'Nunito';
+    }
+
+    .competences{
+        text-align: center;
+        width: 50%;
+        font-size: 1.6vw;
+        font-family: 'Nunito';
+    }
+
+    .contact{
+        text-align: center;
+        width: 50%;
+        font-size: 1.6vw;
+        font-family: 'Nunito';
+    }
+
+    .m-link:hover{
+        text-decoration: underline #00bcbe;
+    }
+
+
+    .m-link i{
+        margin-right: 7px;
     }
 }
 
-span.m-toggle-icon:before{top : 10px}
-span.m-toggle-icon:after{top : -13px}
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px){
+    .first{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .second{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .m-right{
+        height: 18vw;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+    }
+    .accueil{
+        margin: 3% 0 3% 10%;
+        width: 50%;
+        text-align: center;
+    }
+    .a_propos{
+        margin: 3% 10% 3% 0;
+        width: 50%;
+        text-align: center;
+    }
+    .competences{
+        margin: 3% 0 3% 10%;
+        width: 50%;
+        text-align: center;
+    }
+    .contact{
+        margin: 3% 10% 3% 0;
+        width: 50%;
+        text-align: center;
+    }
+    .m-link{
+        width: 50%;
+        font-size: 2vw;
+        font-family: 'Nunito';
+        color:#00bcbe;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .m-link:hover{
+        font-size: 105%;
+        text-decoration: underline #00bcbe;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+    }
+}
+
+@media only screen 
+and (max-device-width : 600px)
+{
+
+    .m-link{
+        text-decoration: none;
+        color: #00bcbe;
+    }
+
+    .menu{
+        background-color: #000000;
+        width: 100%;
+        height: 15vw;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        margin-bottom: 2vw;
+
+    }
+
+    .m-nav-toggle{
+        margin: 0 45%;
+        width: 10vw;
+        height: 12vw;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #00bcbe;
+        background-color: black;
+    }
+
+    span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #00bcbe;
+        position: relative;
+        transition: all 1s ease-in-out;
+    }
+
+    .m-right{
+        display: none;
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        font-family: 'Nunito';
+        color:#00bcbe;
+        text-decoration: none;
+        animation: fadein 2s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }    
+      
+      @keyframes slidein {
+        from {
+          margin-top: 100%;
+          height: 300%; 
+        }
+      
+        to {
+          margin-bottom: 0%;
+          height: 100%;
+        }
+      }
+
+    .m-right.is-open{
+        display: flex;
+        transform: translateX(0);
+        background-color: rgba(0, 0, 0, 0.719);
+        position: fixed;
+    }
+
+    .first{
+        margin-top: 35%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second{
+        margin-bottom: 35%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accueil{
+        animation-duration: 2s;
+        animation-name: slidein;
+        margin-top: 5vw;
+        color: #00bcbe;
+        font-family: 'Nunito';
+        text-decoration: none;
+        font-size: 7vw;
+    }
+    .a_propos{
+        animation-duration: 2s;
+        animation-name: slidein;
+        margin-top: 20vw;
+        color: #00bcbe;
+        font-family: 'Nunito';
+        text-decoration: none;
+        font-size: 7vw;
+    }
+    .competences{
+        animation-duration: 2s;
+        animation-name: slidein;
+        margin-top: 20vw;
+        color: #00bcbe;
+        font-family: 'Nunito';
+        text-decoration: none;
+        font-size: 7vw;
+    }
+    .contact{
+        animation-duration: 2s;
+        animation-name: slidein;
+        margin-top: 20vw;
+        margin-bottom: 5vw;
+        color: #00bcbe;
+        font-family: 'Nunito';
+        text-decoration: none;
+        font-size: 7vw;
+    }
+
+    .m-nav-toggle.is-open span.m-toggle-icon{
+        background: transparent;
+    }
+
+
+    span.m-toggle-icon:before{top : 2.5vw}
+    span.m-toggle-icon:after{top : -3vw}
+}

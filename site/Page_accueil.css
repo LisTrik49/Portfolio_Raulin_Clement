@@ -1,17 +1,94 @@
-.logo{
-    padding-left: 10%;
-    z-index: 2;
+@media screen and (min-device-width: 1000px){
+    .logo{
+        padding-left: 10%;
+        z-index: 2;
+    }
+
+    .inner{
+        z-index: 1;
+    }
+
+    .citation{
+        font-family: 'Nunito';
+        font-size: 1.8vw;
+        color:#00bcbe;
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+        margin: 5% 13% 0;
+    }
+
+    .presentation{
+        font-family: 'Nunito';
+        font-size: 1.4vw;
+        color:#00bcbe;
+        display: flex;
+        text-align: center;
+        margin: 0 15% 5%;
+        width: 70%;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+    }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px){
+    .citation{
+        font-family: 'Nunito';
+        font-size: 3vw;
+        color:#00bcbe;
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+        margin: 22vw 13% 0;
+    }
+
+    .presentation{
+        font-family: 'Nunito';
+        font-size: 1.9vw;
+        color:#00bcbe;
+        display: flex;
+        text-align: center;
+        margin: 0 15% 5%;
+        width: 70%;
+        border: black 1px solid;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+    }
 }
 
-.mentions{
-    width: 100%;
-    height: 15vw;
-    margin-top: 80%;
-    margin-bottom: 2vw;
-    text-align: center;
-    border: black 1px solid;
-}
+@media only screen 
+and (max-device-width : 600px){
 
-.inner{
-    z-index: 1;
+    .logo{
+        width: 150%;
+        margin-left: -25%;
+    }
+
+    .citation{
+        font-family: 'Nunito';
+        font-size: 5vw;
+        color:#00bcbe;
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+        margin: 20vw 13% 0;
+    }
+
+    .presentation{
+        font-family: 'Nunito';
+        font-size: 4vw;
+        color:#00bcbe;
+        display: flex;
+        text-align: center;
+        margin: 0 15% 5%;
+        width: 70%;
+        border: black 1px solid;
+        padding: 2%;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 2px 2px 2px grey;
+    }
 }
